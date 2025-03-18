@@ -1,0 +1,223 @@
+@use "../../../scss/base/mixins.scss";
+.whyBetter {
+	padding-top: var(--block-padding-top);
+	padding-bottom: var(--block-padding-bottom);
+
+	@include mixins.tablet {
+		padding-top: var(--block-padding-top-60);
+		padding-bottom: var(--block-padding-bottom-60);
+	}
+
+	@include mixins.mobileSm {
+		padding-top: var(--block-padding-top-30);
+		padding-bottom: var(--block-padding-bottom-30);
+	}
+}
+.whyBetter__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.whyBetter__title {
+	font-size: var(--fs-48);
+	font-family: var(--font-accent);
+	line-height: 108%;
+	color: var(--text-color-black);
+	font-weight: var(--fw-700);
+	text-align: center;
+	margin-bottom: 20px;
+
+	span {
+		color: var(--text-accent);
+	}
+}
+.whyBetter__text {
+	font-size: var(--fs-32);
+	font-family: var(--font-text);
+	line-height: 108%;
+	color: var(--text-color);
+	font-weight: var(--fw-400);
+	text-align: center;
+	max-width: 885px;
+	margin-bottom: 40px;
+}
+.whyBetter__cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 27px;
+
+	@include mixins.tablet {
+		gap: 16px;
+	}
+}
+.whyBetter__cards-top {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	gap: 20px;
+
+	@include mixins.tablet {
+		gap: 12px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include mixins.mobileSm {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.whyBetter__cards-bottom {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-content: center;
+	gap: 20px;
+
+	@include mixins.tablet {
+		gap: 12px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@include mixins.mobile {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include mixins.mobileSm {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+//----------------cards-top-------------------------//
+.whyBetter__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	background-color: var(--gray-bg);
+	border-radius: 40px;
+	gap: 12px;
+
+	@include mixins.tablet {
+		align-items: flex-start;
+		padding: 20px;
+		border-radius: 20px;
+
+		&:nth-child(3) {
+			grid-column: 1 / 3;
+		}
+	}
+
+	@include mixins.mobileSm {
+		&:nth-child(1) {
+			grid-column: 1 / 2;
+		}
+		&:nth-child(2) {
+			grid-column: 1 / 2;
+		}
+		&:nth-child(3) {
+			grid-column: 1 / 2;
+		}
+	}
+}
+.whyBetter__card_title-wrapper {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.whyBetter__card-title {
+	font-size: var(--fs-80);
+	font-family: var(--font-accent);
+	line-height: 108%;
+	color: var(--text-color-black);
+	font-weight: var(--fw-700);
+}
+.whyBetter__card-icon {
+	width: 60px;
+	height: 60px;
+
+	@include mixins.tablet {
+		width: 30px;
+		height: 30px;
+	}
+}
+.whyBetter__card-text {
+	font-size: var(--fs-24);
+	font-family: var(--font-text);
+	line-height: 108%;
+	color: var(--text-color-black);
+	font-weight: var(--fw-400);
+}
+
+//----------------cards-bottom-------------------------//
+.whyBetter__card-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: var(--gray-bg);
+	border-radius: 40px;
+
+	@include mixins.tablet {
+		align-items: flex-start;
+		padding: 20px;
+		border-radius: 20px;
+
+		&:nth-child(4) {
+			grid-column: 1 / 3;
+		}
+	}
+
+	@include mixins.mobile {
+		&:nth-child(3) {
+			grid-column: 1 / 3;
+		}
+		&:nth-child(4) {
+			grid-column: 1 / 3;
+		}
+		&:nth-child(5) {
+			grid-column: 1 / 3;
+		}
+	}
+
+	@include mixins.mobileSm {
+		&:nth-child(1) {
+			grid-column: 1 / 2;
+		}
+		&:nth-child(2) {
+			grid-column: 1 / 2;
+		}
+		&:nth-child(3) {
+			grid-column: 1 / 2;
+		}
+		&:nth-child(4) {
+			grid-column: 1 / 2;
+		}
+		&:nth-child(5) {
+			grid-column: 1 / 2;
+		}
+	}
+}
+.whyBetter__card_bottom-wrapper {
+	img {
+		width: 50px;
+		height: 50px;
+		margin-bottom: 20px;
+
+		@include mixins.tablet {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+.whyBetter__card-bottom-title {
+	font-size: var(--fs-24);
+	font-family: var(--font-text);
+	color: var(--text-color);
+	font-weight: var(--fw-700);
+}
+.whyBetter__card-bottom-text {
+	font-size: var(--fs-24);
+	font-family: var(--font-text);
+	color: var(--text-color);
+	font-weight: var(--fw-400);
+}

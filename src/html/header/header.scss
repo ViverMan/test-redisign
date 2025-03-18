@@ -1,0 +1,61 @@
+@use "../../scss/base/mixins.scss";
+.header {
+	background-color: var(--black-bg);
+	border-radius: 0 0 40px 40px;
+
+	@include mixins.tablet {
+		border-radius: 0 0 20px 20px;
+	}
+}
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+	margin: 0 10px;
+}
+
+.header__nav {
+	display: block;
+
+	@include mixins.tablet {
+		display: none;
+	}
+}
+.header__nav-d-none {
+	display: none;
+}
+.header__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+}
+.header__item {
+	color: var(--text-color-white);
+	font-size: var(--fs-24);
+	transition: all 0.2s ease-in;
+	&:hover {
+		color: var(--text-color);
+	}
+}
+.header__socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+
+	@include mixins.tablet {
+		display: none;
+	}
+}
+.header__phone {
+	color: var(--text-color-white);
+	font-size: var(--fs-32);
+
+	transition: all 0.2s ease-in;
+	&:hover {
+		color: var(--text-color);
+	}
+}

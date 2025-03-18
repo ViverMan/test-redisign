@@ -1,0 +1,134 @@
+@use "../../../scss/base/mixins.scss";
+.addServices {
+	padding-top: var(--block-padding-top);
+	padding-bottom: var(--block-padding-bottom);
+	background-color: var(--page-bg);
+
+	@include mixins.tablet {
+		padding-top: var(--block-padding-top-60);
+		padding-bottom: var(--block-padding-bottom-60);
+	}
+
+	@include mixins.mobileSm {
+		padding-top: var(--block-padding-top-30);
+		padding-bottom: var(--block-padding-bottom-30);
+	}
+}
+.addServices__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.addServices__title {
+	font-size: var(--fs-48);
+	font-weight: var(--fw-700);
+	font-family: var(--font-accent);
+	line-height: 1;
+	color: var(--text-color-black);
+	text-align: center;
+	margin-bottom: 40px;
+}
+.addServices__cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	max-width: 1480px;
+	gap: 20px;
+
+	@include mixins.mobile {
+		gap: 12px;
+	}
+
+	@include mixins.mobileSm {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.services__card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--gray-bg);
+	border-radius: 40px;
+	padding: 40px;
+	height: 100%;
+
+	@include mixins.mobile {
+		padding: 26px;
+		border-radius: 30px;
+	}
+
+	@include mixins.mobileSm {
+		padding: 20px;
+	}
+}
+.services__card-desc {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.services__card-title {
+	max-width: 80%;
+	font-size: var(--fs-36);
+	font-weight: var(--fw-700);
+	font-family: var(--font-text);
+	line-height: 1;
+	color: var(--text-color-black);
+	margin-bottom: 20px;
+}
+.services__card-text {
+	font-size: var(--fs-24);
+	font-weight: var(--fw-400);
+	font-family: var(--font-text);
+	line-height: 1;
+	color: var(--text-color);
+	margin-top: auto;
+	margin-bottom: 30px;
+
+	@include mixins.mobile {
+		margin-bottom: 20px;
+	}
+
+	span {
+		font-size: var(--fs-36);
+		font-weight: var(--fw-700);
+		font-family: var(--font-accent);
+		line-height: 1;
+		background: linear-gradient(90deg, #f60 0%, #f26659 27.4%, #f06177 37.4%, #e55d97 48.4%, #ca46d2 71.4%, #8d13f9 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+.services__card-img {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 48px;
+	height: 48px;
+}
+.services__card-btn {
+	display: block;
+	font-size: var(--fs-24);
+	font-weight: var(--fw-400);
+	font-family: var(--font-text);
+	line-height: 1.2;
+	color: var(--text-color-white);
+	text-transform: uppercase;
+	text-align: center;
+	background-color: var(--text-accent);
+	border-radius: 20px;
+	padding: 20px 0;
+	margin-top: auto;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: var(--text-color-black);
+		color: var(--text-accent);
+	}
+	@include mixins.mobile {
+		padding: 15px 0;
+	}
+}

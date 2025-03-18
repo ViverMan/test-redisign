@@ -1,0 +1,86 @@
+@use "../../scss/base/mixins.scss";
+.footer {
+	background-color: var(--black-bg);
+	padding: 80px 0px;
+	border-radius: 40px 40px 0px 0px;
+
+	@include mixins.tablet {
+		padding: 40px 0px;
+		border-radius: 20px 20px 0px 0px;
+	}
+
+	@include mixins.mobileSm {
+		padding: 20px 0px;
+	}
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	@include mixins.tablet {
+		align-items: flex-start;
+	}
+
+	@include mixins.mobile {
+		gap: 10px;
+	}
+}
+.footer__rightsText {
+	font-family: var(--font-text);
+	font-size: var(--fs-32);
+	font-weight: var(--fw-400);
+	color: var(--text-color-white);
+	text-align: center;
+
+	@include mixins.tablet {
+		align-self: center;
+	}
+}
+.footer__info {
+	font-family: var(--font-text);
+	font-size: var(--fs-24);
+	font-weight: var(--fw-400);
+	color: var(--text-color-white);
+	text-align: center;
+
+	@include mixins.tablet {
+		align-self: center;
+	}
+}
+.footer__footerMenu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	@include mixins.tablet {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	span {
+		width: 2px;
+		height: 20px;
+		background-color: var(--text-color);
+
+		@include mixins.tablet {
+			display: none;
+		}
+	}
+}
+.footer__footerMenu-link {
+	font-family: var(--font-text);
+	font-size: var(--fs-20);
+	font-weight: var(--fw-400);
+	color: var(--text-color);
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		color: var(--text-color-white);
+	}
+}

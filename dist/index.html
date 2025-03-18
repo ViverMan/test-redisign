@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>test-house</title>
+		<script type="module" crossorigin src="/test-redisign/assets/index-jBOCu2FB.js"></script>
+		<link rel="stylesheet" crossorigin href="/test-redisign/assets/index-8iUVpS3D.css">
+	</head>
+	<body>
+		<div id="app">
+			<header class="header">
+	<div class="container">
+		<div class="header__content">
+			<a href="#" class="header__logo">
+				<img src="/test-redisign/assets/logo-DXaZFEMH.png" alt="logo" />
+			</a>
+			<button class="burger"></button>
+
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item"><a href="#" class="header__link">Как это работает</a></li>
+					<li class="header__item"><a href="#" class="header__link">Цена</a></li>
+					<li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
+					<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header__socials">
+				<a href="#" class="header__socials-link">
+					<img src="data:image/png;base64,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" alt="whatsapp" />
+				</a>
+				<a href="#" class="header__socials-link">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN+SURBVHgB7ZhLTxNRGIbfMy2FXqB4IaAJImjiUkw0GiURV7pV2BrxF6g/wN8gLNzLXmULC0MXigQ3REUjgjQUsQqUUnql03M838AAhZnOtNzGxCcpbYaZzsP7ne/M4TBs0DkwU5/lymOhKDchRCeOBDbOwHtH77X0bx6hH9cGZs4K4RqWH8/CEYgwY/zW6N3WsCZ49fXsDBwjpyPC3hV+yXXt1WyPzLEHjoPV56tdWUUw9ggOhTHRqcgo2+FcSNDZ/BfcK24cEe0nqnG72Y9knuP5RNz0vEMVDFQp6G4LoKutFgE32zw+FElhKpE3vOZQBCmtBxfqtHcjomnV9NoDEySZ9pPVu9LaCcklVWH6+30VpBLekePqRlONYVqx1SyC/mq4lC1hs9LuqyDJ3Gjy4s4Zv2FamTUV80spBLxVRXLE+GIOByKoD3gSO19XZXhOgQtEl9NYSmTQeMyHxnrfrnP2PUGrAa+TzOQRWVxFXuVobqjFsYDx+dMra9iz4PmgBx1yXFkNeGJ7alTOc6eC8NcYJzwl5Uo1SElBqwFvBDXBfCwFLiU9bhdaGmvh9ZhnYFVeU8FumRSV0SotnTW1gMhCEqns+g1Jrk0m53GXfpJaNYihICXX1eq3LbewksHveFpLjaDEWhrrLOWI6UoSpGfjk5EFXJRl7Tjl08aeEfrUoadG1Pk8WkPsnEqMoPtUXOJopoDoXBpD8kXQVNKxMRYbalxaan/i6aJrTga9OH3cD7tMrVjLmQru5F00o72I+80eXA4Wl89sjispmFizdV7Z68H3seIH++kT/rLlCDsNQpQt+DMrkCmsN4TKOSKxJNI5tdyvsdUgRNmCJDeV3ppc56TgyPdfZUlSg9A4PxBB4mNi/cvVAtfeqaPfTEQwOb9s6/rxJXvlJSoS/JTghsf7vq7i6YelkgtQwm4HExUJamVOcfBtj9HBZRe+pBW8ld1O82iplA48QYLKzAVHjrNNOR0aXyT5YjJheK3VCmY7Fa8Hx+Icikzw86obCyYV6/+WwNBsCs+uN6DJt34rOyuY7VScIJV5OCZM5XT0NAflf27Eyx9JlAOTW2/2/5wj4B/Y+mAIwaEIiHG5MGIhOJdepQZqn/wQhuMQ4TG5ma6E7rbGWa5wC46SlJvoOU5OKFr6XpH71QoTckuYHdWua0gIEfIleF/oYau25fUXxHWKJO1JhdgAAAAASUVORK5CYII=" alt="telegram" />
+				</a>
+				<a href="tel:+7 495 118-32-82" class="header__phone">+7 495 118-32-82</a>
+			</div>
+		</div>
+	</div>
+	<section class="burgerMenu-wrapper">
+	<nav class="burgerMenu">
+		<ul class="burgerMenu__list">
+			<li class="burgerMenu__item"><a href="#" class="burgerMenu__link">Как это работает</a></li>
+			<li class="burgerMenu__item"><a href="#" class="burgerMenu__link">Цена</a></li>
+			<li class="burgerMenu__item"><a href="#" class="burgerMenu__link">Отзывы</a></li>
+			<li class="burgerMenu__item"><a href="#" class="burgerMenu__link">Контакты</a></li>
+		</ul>
+	</nav>
+	<div class="burgerMenu__socials">
+		<a href="#" class="burgerMenu__socials-link">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAoLSURBVHgBpVh7cBXVGf/t7n3k5k0gREjiRQg48lLrSBWEKbSghAriFDoVnFJnGEcYoTMqMG1pbZ3iAJ1KAW3VqfpHpU6tWEQBGahiO3YykEgIYALhHZKbhDxubu777p5+5+y9e3f3bgKte7M5Z885e87vfI/f952VALjoTj3w/viNntHux7Uk08AgLiZK+qch3cSgZfrM/foQfZzo0PQxYrAkGq1jtfRYZqzD6/wtWQGigdRbF9Z1vskfJT5gWfzb4f4LES8kpqTXNybUFxQ1vbS066W5j7FM3TaGMX2T5mfbWJbdiOa5wx04Pv5ipTL76MRXkkk2S5JvBVx2x+aF9DbTeCdwxrMNsOYwRoOU7FEL8qd5Aq68Mb6lkDWZsVsAxzKqtbfZAdklORxgqwSz8zLZW+16yqWpKiRJskoG3wTc//ecBmVp0+JMOIihogwIGLYwNDhe5dtSNRV9ySDCqRA9K5Dpl1KTwvdKlULky4XCaYaS1FDgMqXrZuBypEp1DqIj0YlipRTrql7AwyMfQ5l7FFySsV/EtCiaB0/jjat/wPvte1DprST4LkfVD+MskOY1TbksyfDfCjh+B1MDKHePxXtTD2Kka5RQsQQJTlfGRLgJfdCxB081rMDEgjuE1NmwKtffS3aqddK8xsmXaet+s4HDZlf84iBawq3YN+2fuL9olg6MFo5rMRzrPYKD3XtxPtKCaCqKUZ5y3F88E0tuW45JBZMtQBd9OQ+tg03Ik31Dgsu0JTpTddLcRpKgwvxDgeOTc9W0hM/j0swg1dzEnhJJsg8rTi1Bw8AJjPVWiHb7Qn2JfgQTUbw8eRtW+9eR5FKQiYl3X9iO7S1bUOIqStOKszQT3ck6eTjJcXDc3r4ON6N9VpxAuKBICrZe2oypX/rRn+yG31sFF3M7qqjUVYLbfbcRoG0o+9iH3mQv0Z6GteOfw4ZJP0eEpG0HZykptMiGkTrQBV/kUuQ6Ts9oh8pSBM6F+fUz8WHXHlR7xqRtCVkpGDcsJQUojPNVYOKBapwKNghzXjvheUwruo8MRx7SWXhdzjbm0gDf7cbbf4Yy10hSq4JljQsRVrvpJcVkL+wmBq+XqqbBX1CB7xydha5YgDas4h+zP8XFgQANkGxzZOeUhyPgq9E2rKnaSMYt49Mb+3Au0qgnADRhb6IPNfl30X0nEmoCNydgJjbsL6xAzf5xcMku8fz32R+QY8Ut44z3uIo1OPMQV9+2mtcMGnmyaSnypQLRP6iGsOOuN/GXu/djz70HkGDSMFKwAuaSHEcgNzWuF169cOxi9EQjjjyoMSYMAE4Bvi3WgR+O/rEA9077a5jgG29yAB9qRz8uFuAb2DnldcTVGG6VgBlJbueZXWJu3rb+rjUCjN1M+CUPlX1UequNGL3t4ssWCdWWP2KQMV/ke+W16Ir3O0rMLtWMGivyR+BwxwGxxtOT1iMYG3TEITNNc7SdBSMeEdJJsiSCRA/mhaJq1Bot6CpSinCz6GD2bo/kxhvnXxXvVvqqECK+dNqYzCDlNKa0JL5V/KCQztXoRVrcZ+nf177PEtJW1S9HoeLNjtEypZV67EKo767XtUBSzFPy0w6YtV2Q8EjFao4NJrUERhPP8as73gkP/cwq8ike1PfXkd2oYhOBaIAmUrLcp1v4MKrWy75EyNhkmackZwMaMxG1tdSVl80RmIV4C6R8zP3XQ4Ib+fni0ENfoLm/TQdp2Fkur9rtUcoccIRcJL1PMzsJMwPMipfH3kC8XbxY4R2DWCppsSnOXzUF1Xj433OEBFMUZYJLwzgTvCJCo7Ad4s445YWFSjnRyGAahEl99FfqHmEA7Iv25douDAnaPIcgnuj/j5BcZV41OUkIuXyWwpVwC7Y3/4bGSwJQchmN99UgEO5Hc28bWh7twPGFjairbSCpj6bYmzDA8fvekVMNgKFkJAeHKdRZF5foPth5QEjHK+dRYlpi4zj99kge7G7dgV2tvxPq5hv6ZM4RnP4+ZT5LLwvg/BpXOAH1jzbigVGzjHUiySienfycQHohdB4FrnT6BZM/IE3UTnZ4LXKNIoS+419M/HVOkpkBXOwqwI7mbVj6Ra3YEPfIMb6xqMr3C9A62cqibO49ZwijY3AQc8csEIBeP7sbpZ48x4Aha5rkuHAVpUnvtb0jpLLK/wwuDl4f0ht9RDGtoSa4/yrh7Qt/RCY7yjoAw/5rexGg6JR5Z8M964Qt803tbNxlmTMDjsdi6f7P7xAZtbVTr18Kd6JvUVRkHp91H8aar1bCSx5skbpmnZSPvR66gell92DtnWuFbf6+aTvaIldJjfkC+JXeG1CfFtyAg1f3Y9WxJ2het+VMJPKBbrXOlW3MpYISJQ9nQqcwuXAaRtGhKElHVI+ca7PmZ4nJqCwgz41dx+aTLwhqojSXwOUJcO29vWh7sk04mUIZzaKPl6CquNSwObMmObe7MmmNQQNahvdAR8k4phRNF8+bz2xAoczD2a0fIRWeN6bn5SnbtZ4e1C2rQ4VvjLDV+R/Ng7+kjCKXZpxbjPnSLOwyzMXuydT0RPWP0pNL+Kzrc/jJ+LtjfXCTmqPJMDlDGanU7Nm5gHk9RZvqC0bQ+ZMuFHtKxdJbT76Ek73H4VXSR1HY3k1ztewEjpddsSDWT9wkwB0OfIICrRTLqlfibO1lXH/sBlqXtGGU149roS7EKNWyg+Pp0wBlKF0DIWya/kuEVkcIXImwyS1fvYitDVuHBZfxMeneI35OWH67itqiPehZHBGDBujLQbG7xHIG5mcUEdrIPo50HMLeK3/Dmb4zlF0nUeYdiTkVc7B8/EpMKKqBCj3e8wPXzA9noHXga7JlJW13NltOgxNOckOrc9k9V6iUfitM6s2A48/Huo7gpVO/wlsz99AZY5z43DF/bC0WjF0E+8XSP4V+f275E1YffQbVpSOz4Fh6jAO49ARpJ7HZT3esHz8l9XJhJSn1OhI4iN82vYiG3kaU+0roe4sP9+2fShFmBNZPeRaLq3+A6sLbjU8ffKlwchAne+qx4/Qr2Hf+I5QXFaOypFR4b3pJw2sz6xuqRrZfmn6o6jLJ3sKDg8kE3p7xLp5vWI+zwfPkDCUirGksN7nVyAP7YhEKXXrKz4+R/IuZTGCLvF74ZI/JrmyOBAdwpnauYmnqwSr6ssBtMKtqjcg3Tjmh18gDh6AVOHmt87jhwTGLyjP9WjfZoMTpSrPyF+/lSarGnDgOFloBswV4Y2wugP8FnPinMFlWB9Umpuq6G1JSzLwB5iitXOllcrqhwZm50g6O+pgWleqkqgfhu+3dcZHw2bgqMA8hKTacNJ1UaPJGJ46zO4MFnKap7kmKEvjuoDhXuihN843eUnlC9kk1LKWvlHUCB5vTTEBhBW4BmqN63iEJ7tTb9LrE0tGWt1GsV4PsXM+rkbtRD/Zfhhwyzcui9DQAAAAASUVORK5CYII=" alt="whatsapp" />
+		</a>
+		<a href="#" class="burgerMenu__socials-link">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN+SURBVHgB7ZhLTxNRGIbfMy2FXqB4IaAJImjiUkw0GiURV7pV2BrxF6g/wN8gLNzLXmULC0MXigQ3REUjgjQUsQqUUnql03M838AAhZnOtNzGxCcpbYaZzsP7ne/M4TBs0DkwU5/lymOhKDchRCeOBDbOwHtH77X0bx6hH9cGZs4K4RqWH8/CEYgwY/zW6N3WsCZ49fXsDBwjpyPC3hV+yXXt1WyPzLEHjoPV56tdWUUw9ggOhTHRqcgo2+FcSNDZ/BfcK24cEe0nqnG72Y9knuP5RNz0vEMVDFQp6G4LoKutFgE32zw+FElhKpE3vOZQBCmtBxfqtHcjomnV9NoDEySZ9pPVu9LaCcklVWH6+30VpBLekePqRlONYVqx1SyC/mq4lC1hs9LuqyDJ3Gjy4s4Zv2FamTUV80spBLxVRXLE+GIOByKoD3gSO19XZXhOgQtEl9NYSmTQeMyHxnrfrnP2PUGrAa+TzOQRWVxFXuVobqjFsYDx+dMra9iz4PmgBx1yXFkNeGJ7alTOc6eC8NcYJzwl5Uo1SElBqwFvBDXBfCwFLiU9bhdaGmvh9ZhnYFVeU8FumRSV0SotnTW1gMhCEqns+g1Jrk0m53GXfpJaNYihICXX1eq3LbewksHveFpLjaDEWhrrLOWI6UoSpGfjk5EFXJRl7Tjl08aeEfrUoadG1Pk8WkPsnEqMoPtUXOJopoDoXBpD8kXQVNKxMRYbalxaan/i6aJrTga9OH3cD7tMrVjLmQru5F00o72I+80eXA4Wl89sjispmFizdV7Z68H3seIH++kT/rLlCDsNQpQt+DMrkCmsN4TKOSKxJNI5tdyvsdUgRNmCJDeV3ppc56TgyPdfZUlSg9A4PxBB4mNi/cvVAtfeqaPfTEQwOb9s6/rxJXvlJSoS/JTghsf7vq7i6YelkgtQwm4HExUJamVOcfBtj9HBZRe+pBW8ld1O82iplA48QYLKzAVHjrNNOR0aXyT5YjJheK3VCmY7Fa8Hx+Icikzw86obCyYV6/+WwNBsCs+uN6DJt34rOyuY7VScIJV5OCZM5XT0NAflf27Eyx9JlAOTW2/2/5wj4B/Y+mAIwaEIiHG5MGIhOJdepQZqn/wQhuMQ4TG5ma6E7rbGWa5wC46SlJvoOU5OKFr6XpH71QoTckuYHdWua0gIEfIleF/oYau25fUXxHWKJO1JhdgAAAAASUVORK5CYII=" alt="telegram" />
+		</a>
+		<a href="tel:+7 495 118-32-82" class="burgerMenu__phone">+7 495 118-32-82</a>
+	</div>
+	<a href="#" class="burgerMenu__close close">Закрыть</a>
+</section>
+
+</header>
+
+<main>
+	<section class="blockTop">
+	<div class="container">
+		<div class="blockTop__content">
+			<div class="blockTop__content-top">
+				<div class="blockTop__left">
+					<h1 class="blockTop__title"><span>Лидогенерация</span> для бизнеса</h1>
+					<p class="blockTop__text">Покупайте только целевые лиды по фиксированной цене от 300 ₽</p>
+					<a href="#!" class="blockTop__btn">Выбрать пакет лидов</a>
+				</div>
+				<div class="blockTop__right">
+					<img src="/test-redisign/assets/blonde-young-woman-BR_NHRo8.jpg" alt="blonde-young-woman" class="blockTop__img" />
+				</div>
+			</div>
+			<div class="blockTop__content-bottom">
+				<a class="blockTop__link" href="#!">Лидогенерация в b2b</a>
+				<a class="blockTop__link" href="#!">Биржа лидов</a>
+				<a class="blockTop__link" href="#!">Сервис по Лидгену</a>
+				<a class="blockTop__link" href="#!">Лиды для производства</a>
+				<a class="blockTop__link" href="#!">Клиенты для бизнеса</a>
+				<a class="blockTop__link" href="#!">Определить телефон посетителя сайта</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="advantages">
+	<div class="container">
+		<div class="advantages__content">
+			<h2 class="advantages__title">
+				Завалим ваш отдел продаж <br />
+				<span>целевыми Лидами</span>
+			</h2>
+			<div class="advantages__cards">
+				<div class="advantages__card">
+	<div class="advantages__card-desc">
+		<h3 class="advantages__card-title">Оплата за результат</h3>
+		<p class="advantages__card-text">Вы платите только за переданные и получение вами целевые Лиды — их контактные данные (телефон, Telegram, email)</p>
+	</div>
+	<div class="advantages__card-img">
+		<img src="/test-redisign/assets/phone-GtGEEDys.png" alt="advantages-1" />
+	</div>
+</div>
+
+				<div class="advantages__card">
+	<div class="advantages__card-desc">
+		<h3 class="advantages__card-title">Качественные лиды</h3>
+		<p class="advantages__card-text">Все передаваемые вам Лиды — это потенциальные клиенты, которые искали ваш товар или услугу</p>
+	</div>
+	<div class="advantages__card-img">
+		<img src="/test-redisign/assets/man-By2Dglju.png" alt="advantages-1" />
+	</div>
+</div>
+
+				<div class="advantages__card">
+	<div class="advantages__card-desc">
+		<h3 class="advantages__card-title">Любой объём — на ваш выбор</h3>
+		<p class="advantages__card-text">Покупайте сколько контактов потенциальных клиентов в месяц — сколько требуется вам!</p>
+	</div>
+	<div class="advantages__card-img">
+		<img src="/test-redisign/assets/cart-DbLgjDID.png" alt="advantages-1" />
+	</div>
+</div>
+
+				<div class="advantages__card">
+	<div class="advantages__card-desc">
+		<h3 class="advantages__card-title">Комплекс технологий</h3>
+		<p class="advantages__card-text">После расчёта стоимости Лидов и оплаты выбранного пакета — вы получите уникальный код для своего сайта, который позволит отслеживать контакты тех, кто не оставил заявку</p>
+	</div>
+	<div class="advantages__card-img">
+		<img src="/test-redisign/assets/laptop-DDtOWJEd.png" alt="advantages-1" />
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="prices">
+	<div class="container">
+		<div class="prices__content">
+			<h3 class="prices__title">Стоимость технологий <br /><span>«Лид Конвейер»</span></h3>
+
+			<p class="prices__text">Оптимальные тарифы и цены на получение готовых Лидов и заявок с вашего сайта, без переплаты и абонентской платы</p>
+
+			<div class="prices__cards">
+				<article class="prices__card">
+	<a href="#" class="prices__card-link"></a>
+	<div class="prices__card-desc">
+		<div class="prices__card_title-wrapper">
+			<h4 class="prices__card-title">Старт</h4>
+			<svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z" fill="#2D2D2D" />
+			</svg>
+		</div>
+		<h5 class="prices__card-subtitle">50 готовых лидов за <span>22 500 ₽</span></h5>
+		<p class="prices__card-text">Стартовый пакет для тех, кто хочет купить Лидов со своего сайта и повысить свои продаж</p>
+
+		<ul class="prices__card-list">
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>50 Лидов</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				450 ₽ за один Лид
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				Получение за 5–7 дней
+			</li>
+		</ul>
+
+		<a href="#!" class="prices__card-btn">Купить</a>
+	</div>
+</article>
+
+				<article class="prices__card">
+	<a href="#" class="prices__card-link"></a>
+	<div class="prices__card-desc">
+		<div class="prices__card_title-wrapper">
+			<h4 class="prices__card-title">Стандарт</h4>
+			<svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z" fill="#2D2D2D" />
+			</svg>
+		</div>
+		<h5 class="prices__card-subtitle">100 готовых лидов за <span>40 000 ₽</span></h5>
+		<p class="prices__card-text">Оптимальный пакет Лидов для любого отдела продаж и для повышения продаж своих товаров или услуг</p>
+
+		<ul class="prices__card-list">
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>100 Лидов</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>400 ₽ за один Лид</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>Получение за 7–14 дней</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>Возможность показа Лидам рекламы через Яндекс.Директ</p>
+			</li>
+		</ul>
+
+		<a href="#!" class="prices__card-btn">Купить</a>
+	</div>
+</article>
+
+				<article class="prices__card">
+	<a href="#" class="prices__card-link"></a>
+	<div class="prices__card-desc">
+		<div class="prices__card_title-wrapper">
+			<h4 class="prices__card-title">Премиум</h4>
+			<svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z" fill="#2D2D2D" />
+			</svg>
+		</div>
+		<h5 class="prices__card-subtitle">300 готовых лидов за <span>90 000 ₽</span></h5>
+		<p class="prices__card-text">Максимум целевых Лидов в ближайшее время для вашего бизнеса которые уже завтра могут стать Вашими клиентами!</p>
+
+		<ul class="prices__card-list">
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>300 Лидов</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>300 ₽ за один Лид</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>Получение за 14–30 дней</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>Возможность показа Лидам рекламы через Яндекс.Директ</p>
+			</li>
+			<li class="prices__card-list-item">
+				<svg class="prices__card-list-icon" width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 9.72581L10.5 18.5L26 2.5" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<p>Готовый и конверсионный скрипт продаж целевым Лидам</p>
+			</li>
+		</ul>
+
+		<a href="#!" class="prices__card-btn">Купить</a>
+	</div>
+</article>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="addServices">
+	<div class="container">
+		<div class="addServices__content">
+			<h2 class="addServices__title">Дополнительные услуги</h2>
+			<div class="addServices__cards">
+				<article class="services__card">
+	<div class="services__card-desc">
+		<h3 class="services__card-title">Создание промо-страницы</h3>
+		<p class="services__card-text">от <span>15 000 ₽</span></p>
+	</div>
+	<div class="services__card-img">
+		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M19.0532 0L27.7723 18.2688L48 19.0532L29.7312 27.7723L28.9468 48L20.2277 29.7312L0 28.9468L18.2688 20.2277L19.0532 0Z" fill="url(#paint0_linear_753_628)" />
+			<defs>
+				<linearGradient id="paint0_linear_753_628" x1="0" y1="24" x2="48" y2="24" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#FF6600" />
+					<stop offset="0.274" stop-color="#F26659" />
+					<stop offset="0.374" stop-color="#F06177" />
+					<stop offset="0.484" stop-color="#E65D97" />
+					<stop offset="0.714" stop-color="#CA46D2" />
+					<stop offset="1" stop-color="#8D13F9" />
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+	<a href="#" class="services__card-btn">Купить</a>
+</article>
+
+				<article class="services__card">
+	<div class="services__card-desc">
+		<h3 class="services__card-title">Настройка и ведение Яндекс.Директ</h3>
+		<p class="services__card-text">от <span>10 000 ₽</span></p>
+	</div>
+	<div class="services__card-img">
+		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M19.0532 0L27.7723 18.2688L48 19.0532L29.7312 27.7723L28.9468 48L20.2277 29.7312L0 28.9468L18.2688 20.2277L19.0532 0Z" fill="url(#paint0_linear_753_628)" />
+			<defs>
+				<linearGradient id="paint0_linear_753_628" x1="0" y1="24" x2="48" y2="24" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#FF6600" />
+					<stop offset="0.274" stop-color="#F26659" />
+					<stop offset="0.374" stop-color="#F06177" />
+					<stop offset="0.484" stop-color="#E65D97" />
+					<stop offset="0.714" stop-color="#CA46D2" />
+					<stop offset="1" stop-color="#8D13F9" />
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+	<a href="#" class="services__card-btn">Купить</a>
+</article>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="clients">
+	<div class="container">
+		<div class="clients__content">
+			<h2 class="clients__title">Клиенты, которые уже покупают <span>Лидов для своего бизнеса</span></h2>
+			<p class="clients__text">Более 5000 компаний по всей России уже используют покупку Лидов!</p>
+			<div class="clients__cards">
+				<article class="clients__card">
+	<div class="clients__card-img">
+		<img src="/test-redisign/assets/skoda-EI0EPRe1.png" alt="clients-1" />
+	</div>
+</article>
+
+				<article class="clients__card">
+	<div class="clients__card-img">
+		<img src="/test-redisign/assets/skillbox-XBjrwvKK.png" alt="clients-1" />
+	</div>
+</article>
+
+				<article class="clients__card">
+	<div class="clients__card-img">
+		<img src="/test-redisign/assets/worldClass-BMe1aeHn.svg" alt="clients-1" />
+	</div>
+</article>
+
+				<article class="clients__card">
+	<div class="clients__card-img">
+		<img src="/test-redisign/assets/bank-DO5xdgWr.png" alt="clients-1" />
+	</div>
+</article>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="reviews">
+	<div class="container">
+		<div class="reviews__content">
+			<h2 class="reviews__title">Отзывы клиентов</h2>
+			<p class="reviews__text">Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении более 2-х лет</p>
+			<div class="reviews__cards">
+				<article class="reviews__card">
+	<div class="reviews__card-grade">
+		<p class="reviews__card-number">5,0</p>
+		<div class="reviews__card-stars">
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+		</div>
+	</div>
+	<div class="reviews__card-desc">
+		<p class="reviews__card-text">«Стабильно получаем новые лиды из сервиса. С точки зрения рентабельности нареканий нет. Тёплая заявка 800–1000 рублей, конверсия, цена-качество устраивает. Общее впечатление достаточно хорошее, цена, качество, скорость».</p>
+		<p class="reviews__card-desk">Ниша: банкротство, списание долгов</p>
+	</div>
+</article>
+
+				<article class="reviews__card">
+	<div class="reviews__card-grade">
+		<p class="reviews__card-number">4,8</p>
+		<div class="reviews__card-stars">
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+		</div>
+	</div>
+	<div class="reviews__card-desc">
+		<p class="reviews__card-text">«С вашим сервисом работаем с июня 22 года. Нас заинтересовало, и мы решили протестировать. Взяли минимальный пакет из 10 новых лидов, а потом, как он закончился, взяли повышенный пакет. Учитывая нашу сферу и посмотреть статистику, из 100 заинтересованных 15 в продажу. Это хороший результат».</p>
+		<p class="reviews__card-desk">Ниша: банкротство, списание долгов</p>
+	</div>
+</article>
+
+				<article class="reviews__card">
+	<div class="reviews__card-grade">
+		<p class="reviews__card-number">5,0</p>
+		<div class="reviews__card-stars">
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+		</div>
+	</div>
+	<div class="reviews__card-desc">
+		<p class="reviews__card-text">«С сервисом работаем чуть меньше года. Немного сомневались, но согласились попробовать, а после продолжили работать. Новые клиенты появились сразу, передали на наш колл-центр. С вашего источника дешевле, чем с других сервисов. Безусловно, с вами стоит работать».</p>
+		<p class="reviews__card-desk">Ниша: банкротство, списание долгов</p>
+	</div>
+</article>
+
+				<article class="reviews__card">
+	<div class="reviews__card-grade">
+		<p class="reviews__card-number">4,9</p>
+		<div class="reviews__card-stars">
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+			<img src="data:image/svg+xml,%3csvg%20width='49'%20height='49'%20viewBox='0%200%2049%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.5%200L29.3508%2019.6492L49%2024.5L29.3508%2029.3508L24.5%2049L19.6492%2029.3508L0%2024.5L19.6492%2019.6492L24.5%200Z'%20fill='url(%23paint0_linear_3002_62)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_3002_62'%20x1='0'%20y1='24.5'%20x2='49'%20y2='24.5'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="clients-1" />
+		</div>
+	</div>
+	<div class="reviews__card-desc">
+		<p class="reviews__card-text">«С вашей компанией работаем более 2-х лет, сотрудничество полезное. Мы все посмотрели, разобрались, что сервис даёт реально целевые заявки. Заключили контракт на 23 000 рублей, окупилось. Понравилась технология, она помогает нам получать лиды».</p>
+		<p class="reviews__card-desk">Ниша: банкротство, списание долгов</p>
+	</div>
+</article>
+
+			</div>
+			<div class="reviews__video">
+				<div class="reviews__video-content">
+					<div class="reviews__video-wrapper">
+						<video id="video" class="reviews__video-video" src="/test-redisign/assets/%D0%A1%D1%82%D0%B8%D1%85%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0-BaS2NQv5.mp4"></video>
+						<img id="play" class="reviews__video-img" src="data:image/svg+xml,%3csvg%20width='53'%20height='62'%20viewBox='0%200%2053%2062'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M53%2031L0.499997%2061.3109L0.5%200.689109L53%2031Z'%20fill='url(%23paint0_linear_753_425)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_753_425'%20x1='18'%20y1='-4'%20x2='18'%20y2='66'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" />
+						<img id="pause" class="reviews__video-img-pause" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3SMQ6AMBADwfv/p6GxRAmFAyiaaaMrrOwMALzoeGjVfc12Q+aj9xpDwo+0SSuk1SatkFabtEJabdIKabVJK6TVJq2QVpu0Qlpt0gpptUnrr2ndWXVfs80QAJjLCbz6+z0DWFzWAAAAAElFTkSuQmCC" alt="" />
+						<p>Стихотворение Пушкина</p>
+					</div>
+					<div class="reviews__video-wrapper">
+						<video id="video" class="reviews__video-video" src="/test-redisign/assets/%D0%A1%D1%82%D0%B8%D1%85%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0-BaS2NQv5.mp4"></video>
+						<img id="play" class="reviews__video-img" src="data:image/svg+xml,%3csvg%20width='53'%20height='62'%20viewBox='0%200%2053%2062'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M53%2031L0.499997%2061.3109L0.5%200.689109L53%2031Z'%20fill='url(%23paint0_linear_753_425)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_753_425'%20x1='18'%20y1='-4'%20x2='18'%20y2='66'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" />
+						<img id="pause" class="reviews__video-img-pause" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3SMQ6AMBADwfv/p6GxRAmFAyiaaaMrrOwMALzoeGjVfc12Q+aj9xpDwo+0SSuk1SatkFabtEJabdIKabVJK6TVJq2QVpu0Qlpt0gpptUnrr2ndWXVfs80QAJjLCbz6+z0DWFzWAAAAAElFTkSuQmCC" alt="" />
+						<p>Стихотворение Пушкина</p>
+					</div>
+					<div class="reviews__video-wrapper">
+						<video id="video2" class="reviews__video-video" src="/test-redisign/assets/%D0%A1%D1%82%D0%B8%D1%85%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0-BaS2NQv5.mp4"></video>
+						<img id="play2" class="reviews__video-img" src="data:image/svg+xml,%3csvg%20width='53'%20height='62'%20viewBox='0%200%2053%2062'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M53%2031L0.499997%2061.3109L0.5%200.689109L53%2031Z'%20fill='url(%23paint0_linear_753_425)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_753_425'%20x1='18'%20y1='-4'%20x2='18'%20y2='66'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" />
+						<img id="pause2" class="reviews__video-img-pause" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3SMQ6AMBADwfv/p6GxRAmFAyiaaaMrrOwMALzoeGjVfc12Q+aj9xpDwo+0SSuk1SatkFabtEJabdIKabVJK6TVJq2QVpu0Qlpt0gpptUnrr2ndWXVfs80QAJjLCbz6+z0DWFzWAAAAAElFTkSuQmCC" alt="" />
+						<p>Стихотворение Пушкина</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="technology">
+	<div class="container">
+		<div class="technology__content">
+			<div class="technology__block-left">
+				<img src="/test-redisign/assets/bg-BvMcVkv0.jpg" alt="" />
+			</div>
+			<div class="technology__block-right">
+				<h2 class="technology__title">
+					Технология <br />
+					<span>«Лид Конвейер»</span>
+				</h2>
+				<div class="technology__text-block">
+					<p class="technology__text">Мы разработали программный комплекс, который позволяет определять контактные данные (телефон, Telegram, email) тех посетителей вашего сайта, кто был на сайте, но не оставил заявку.</p>
+					<p class="technology__text">Далее, на основе собственных разработок, мы идентифицируем пользователей по интересам и интересующим их товарам и услугам — вам передаём только тех, кто заинтересован в вашей услуге или товаре.</p>
+					<p class="technology__text">Вы платите только за результат — за полученных Лидов (заявки) на свои услуги или товары.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="registration1">
+	<div class="container">
+		<div class="registration1__content">
+			<div class="registration1__content-left">
+				<h4 class="registration1__title">Зарегистрируйтесь и добавьте свой проект в систему — начните получать Лидов сегодня!</h4>
+				<a class="registration1__btn" href="#!">Зарегистрироваться</a>
+			</div>
+			<div class="registration1__content-right">
+				<img class="registration1__img" src="/test-redisign/assets/portrait-young-stylish-woman-Dn7akjUG.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="slider">
+	<div class="container">
+		<div class="slider__content swiper">
+			<div class="slider__container swiper-wrapper">
+				<div class="slide swiper-slide">
+	<div class="slide__wrapper">
+        <h4 class="slide__title">Как это работает?</h4>
+        <div class="slide__content">
+            <div class="slide__content-left">
+                <div class="slide__content-left-block">
+                    <p class="slide__content-left-title">01</p>
+                    <img src="/test-redisign/assets/ManTechnologist-C8m_CJIB.png" alt="">
+                </div>
+                <p class="slide__content-left-text">Регистрация и добавление проекта в систему</p>
+            </div>
+            <div class="slide__content-right">
+                <ul class="slide__content-right-list">
+                    <li class="slide__content-right-item">1. Зарегистрируйтесь в нашем личном кабинете</li>
+                    <li class="slide__content-right-item">2. При добавление проекта вам необходимо указать URL (адрес) своего сайта</li>
+                    <li class="slide__content-right-item">3. Для вашего сайта будет сгенерирован уникальный код, который необходимо установить на свой сайт (в шаблоне сайта, перед тегом </head>)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+				<div class="slide swiper-slide">
+	<div class="slide__wrapper">
+		<h4 class="slide__title">Как это работает?</h4>
+		<div class="slide__content">
+			<div class="slide__content-left">
+				<div class="slide__content-left-block">
+					<p class="slide__content-left-title">02</p>
+					<img src="data:image/png;base64,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" alt="" />
+				</div>
+				<p class="slide__content-left-text">Выбор пакета и количества Лидов</p>
+			</div>
+			<div class="slide__content-right">
+				<ul class="slide__content-right-list">
+					<li class="slide__content-right-item">После добавления проекта в систему, вам необходимо выбрать тот пакет и количество Лидов, которое вам необходимо.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+				<div class="slide swiper-slide">
+	<div class="slide__wrapper">
+        <h4 class="slide__title">Как это работает?</h4>
+        <div class="slide__content">
+            <div class="slide__content-left">
+                <div class="slide__content-left-block">
+                    <p class="slide__content-left-title">03</p>
+                    <img src="/test-redisign/assets/MoneyWings-CezvcHgZ.png" alt="">
+                </div>
+                <p class="slide__content-left-text">Регистрация и добавление проекта в систему</p>
+            </div>
+            <div class="slide__content-right">
+                <ul class="slide__content-right-list">
+                    <li class="slide__content-right-item">1. Зарегистрируйтесь в нашем личном кабинете</li>
+                    <li class="slide__content-right-item">2. При добавление проекта вам необходимо указать URL (адрес) своего сайта</li>
+                    <li class="slide__content-right-item">3. Для вашего сайта будет сгенерирован уникальный код, который необходимо установить на свой сайт (в шаблоне сайта, перед тегом </head>)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+				<div class="slide swiper-slide">
+	<div class="slide__wrapper">
+        <h4 class="slide__title">Как это работает?</h4>
+        <div class="slide__content">
+            <div class="slide__content-left">
+                <div class="slide__content-left-block">
+                    <p class="slide__content-left-title">04</p>
+                    <img src="/test-redisign/assets/Locked-BM0JDLLQ.png" alt="">
+                </div>
+                <p class="slide__content-left-text">Регистрация и добавление проекта в систему</p>
+            </div>
+            <div class="slide__content-right">
+                <ul class="slide__content-right-list">
+                    <li class="slide__content-right-item">1. Зарегистрируйтесь в нашем личном кабинете</li>
+                    <li class="slide__content-right-item">2. При добавление проекта вам необходимо указать URL (адрес) своего сайта</li>
+                    <li class="slide__content-right-item">3. Для вашего сайта будет сгенерирован уникальный код, который необходимо установить на свой сайт (в шаблоне сайта, перед тегом </head>)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+				<div class="slide swiper-slide">
+	<div class="slide__wrapper">
+		<h4 class="slide__title">Как это работает?</h4>
+		<div class="slide__content">
+			<div class="slide__content-left">
+				<div class="slide__content-left-block">
+					<p class="slide__content-left-title">05</p>
+					<img src="/test-redisign/assets/StarStruck-CB9-k_2I.png" alt="" />
+				</div>
+				<p class="slide__content-left-text">Начало получения Лидов</p>
+			</div>
+			<div class="slide__content-right">
+				<ul class="slide__content-right-list">
+					<li class="slide__content-right-item">В зависимости от вашей тематики (услуги или товара), а также объёма вашего трафика сайта система будет добавлять в личном кабинете контакты потенциальных клиентов, заинтересованных в вашей услуги и из вашего региона.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</section>
+
+	<section class="presentation">
+	<div class="container">
+		<div class="presentation__content">
+			<div class="presentation__title-wrapper">
+				<h4 class="presentation__title">
+					Мы подготовили для вас <br />
+					видео-презентацию <span>нашей работы</span>
+				</h4>
+				<img src="/test-redisign/assets/VideoCamera-BLgFGqod.png" alt="" />
+			</div>
+			<div class="presentation__video-wrapper">
+				<video id="video" class="reviews__video-video" src="/test-redisign/assets/%D0%A1%D1%82%D0%B8%D1%85%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0-BaS2NQv5.mp4"></video>
+				<img class="reviews__video-img" src="data:image/svg+xml,%3csvg%20width='53'%20height='62'%20viewBox='0%200%2053%2062'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M53%2031L0.499997%2061.3109L0.5%200.689109L53%2031Z'%20fill='url(%23paint0_linear_753_425)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_753_425'%20x1='18'%20y1='-4'%20x2='18'%20y2='66'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF6600'/%3e%3cstop%20offset='0.274'%20stop-color='%23F26659'/%3e%3cstop%20offset='0.374'%20stop-color='%23F06177'/%3e%3cstop%20offset='0.484'%20stop-color='%23E65D97'/%3e%3cstop%20offset='0.714'%20stop-color='%23CA46D2'/%3e%3cstop%20offset='1'%20stop-color='%238D13F9'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" />
+				<img class="reviews__video-img-pause" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3SMQ6AMBADwfv/p6GxRAmFAyiaaaMrrOwMALzoeGjVfc12Q+aj9xpDwo+0SSuk1SatkFabtEJabdIKabVJK6TVJq2QVpu0Qlpt0gpptUnrr2ndWXVfs80QAJjLCbz6+z0DWFzWAAAAAElFTkSuQmCC" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="whyBetter">
+	<div class="container">
+		<div class="whyBetter__content">
+			<h4 class="whyBetter__title">
+				Почему лучше<br />
+				<span>заказать Лидов у нас</span>
+			</h4>
+			<p class="whyBetter__text">Лидогенерация — это стабильное получение клиентов и выполнение плана по продажам!</p>
+			<div class="whyBetter__cards">
+				<div class="whyBetter__cards-top">
+					<article class="whyBetter__card">
+	<div class="whyBetter__card_title-wrapper">
+		<h4 class="whyBetter__card-title">01</h4>
+		<svg class="whyBetter__card-icon" width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z" fill="#2D2D2D" />
+		</svg>
+	</div>
+	<p class="whyBetter__card-text">Только качественные Лиды. Мы идентифицируем только тех посетителей, которым интересна ваша услуги и из вашего города.</p>
+</article>
+
+					<article class="whyBetter__card">
+	<div class="whyBetter__card_title-wrapper">
+		<h4 class="whyBetter__card-title">02</h4>
+		<svg class="whyBetter__card-icon" width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z" fill="#2D2D2D" />
+		</svg>
+	</div>
+	<p class="whyBetter__card-text">Доступная цена и отсутствие минимального порога. У нас отсутствует минимальная плата за сервис, подписка и т.п. Вы покупаете столько Лидов — сколько хотите!</p>
+</article>
+
+					<article class="whyBetter__card">
+	<div class="whyBetter__card_title-wrapper">
+		<h4 class="whyBetter__card-title">03</h4>
+		<svg class="whyBetter__card-icon" width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z" fill="#2D2D2D" />
+		</svg>
+	</div>
+	<p class="whyBetter__card-text">Техническая поддержка и комплекс услуг. Мы работаем для вас 24/7!</p>
+</article>
+
+				</div>
+				<div class="whyBetter__cards-bottom">
+					<article class="whyBetter__card-bottom">
+	<div class="whyBetter__card_bottom-wrapper">
+		<img src="data:image/png;base64,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" alt="HighVoltage" />
+		<h5 class="whyBetter__card-bottom-title">Источник Лидов:</h5>
+		<p class="whyBetter__card-bottom-text">контекстная реклама в Яндекс.Директ, SEO, SMM и другая реклама дополняют технологию «Лид Конвейер».</p>
+	</div>
+</article>
+
+					<article class="whyBetter__card-bottom">
+	<div class="whyBetter__card_bottom-wrapper">
+		<img src="/test-redisign/assets/Fire-DWKVZz1Z.png" alt="Fire" />
+		<h5 class="whyBetter__card-bottom-title">Вы экономите на рекламе:</h5>
+		<p class="whyBetter__card-bottom-text">получая контактные данных тех, кто не оставил заявки, но заинтересован в Вашем товаре или услуге — это дополнительный канал продаж.</p>
+	</div>
+</article>
+
+					<article class="whyBetter__card-bottom">
+	<div class="whyBetter__card_bottom-wrapper">
+		<img src="/test-redisign/assets/GlowingStar-fdI39EiS.png" alt="Star" />
+		<h5 class="whyBetter__card-bottom-title">Вы сможете прогнозировать продажи:</h5>
+		<p class="whyBetter__card-bottom-text">чтобы не ждать, когда-же кто‑то позвонит или оставит заявку, звоните и продавайте первым!</p>
+	</div>
+</article>
+
+					<article class="whyBetter__card-bottom">
+	<div class="whyBetter__card_bottom-wrapper">
+		<img src="data:image/png;base64,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" alt="HundredPoints" />
+		<h5 class="whyBetter__card-bottom-title">Безопасно:</h5>
+		<p class="whyBetter__card-bottom-text">это абсолютно легальный и законный метод получения Лидов.</p>
+	</div>
+</article>
+
+					<article class="whyBetter__card-bottom">
+	<div class="whyBetter__card_bottom-wrapper">
+		<img src="data:image/png;base64,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" alt="WomanRunning" />
+		<h5 class="whyBetter__card-bottom-title">Быстро:</h5>
+		<p class="whyBetter__card-bottom-text">запуск и получение первых Лидов обычно занимает 5–7 дней, а добавление проекта в систему менее 1 часа.</p>
+	</div>
+</article>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="registration2">
+	<div class="container">
+		<div class="registration2__content">
+			<div class="registration2__content-right">
+				<img class="registration2__img" src="/test-redisign/assets/portrait-happy-young-g5UcnKSc.jpg" alt="" />
+			</div>
+			<div class="registration2__content-left">
+				<h4 class="registration2__title">Давайте принесём результат Вашему бизнесу? Завалите своей отдел продаж Лидами!</h4>
+				<a class="registration2__btn" href="#!">Зарегистрироваться</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="questionAnswer">
+	<div class="container">
+		<h2 class="questionAnswer__title">Вопросы и ответы</h2>
+		<div class="questionAnswer__content">
+			<div class="questionAnswer__accordion">
+				<details class="questionAnswer__details">
+					<summary class="questionAnswer__summary">
+						<span><p>На сколько это безопасно, законно и может ли навредить моему сайту?</p></span>
+					</summary>
+					<article class="questionAnswer__article">
+						<ul class="questionAnswer__list">
+							<li class="questionAnswer__item">Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.</li>
+							<li class="questionAnswer__item">Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.</li>
+							<li class="questionAnswer__item">Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.</li>
+						</ul>
+					</article>
+				</details>
+				<details class="questionAnswer__details">
+					<summary class="questionAnswer__summary">
+						<span><p>Откуда берутся номера телефонов?</p></span>
+					</summary>
+					<article class="questionAnswer__article">
+						<ul class="questionAnswer__list">
+							<li class="questionAnswer__item">Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.</li>
+							<li class="questionAnswer__item">Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.</li>
+							<li class="questionAnswer__item">Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.</li>
+						</ul>
+					</article>
+				</details>
+				<details class="questionAnswer__details">
+					<summary class="questionAnswer__summary">
+						<span><p>Смогу ли я сам установить код на сайт?</p></span>
+					</summary>
+					<article class="questionAnswer__article">
+						<ul class="questionAnswer__list">
+							<li class="questionAnswer__item">Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.</li>
+							<li class="questionAnswer__item">Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.</li>
+							<li class="questionAnswer__item">Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.</li>
+						</ul>
+					</article>
+				</details>
+				<details class="questionAnswer__details">
+					<summary class="questionAnswer__summary">
+						<span><p>На какую CMS или конструктор можно установить код «Лид Конвейер»?</p></span>
+					</summary>
+					<article class="questionAnswer__article">
+						<ul class="questionAnswer__list">
+							<li class="questionAnswer__item">Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.</li>
+							<li class="questionAnswer__item">Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.</li>
+							<li class="questionAnswer__item">Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.</li>
+						</ul>
+					</article>
+				</details>
+				<details class="questionAnswer__details">
+					<summary class="questionAnswer__summary">
+						<span><p>Как оплатить ваш сервис?</p></span>
+					</summary>
+					<article class="questionAnswer__article">
+						<ul class="questionAnswer__list">
+							<li class="questionAnswer__item">Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.</li>
+							<li class="questionAnswer__item">Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.</li>
+							<li class="questionAnswer__item">Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.</li>
+						</ul>
+					</article>
+				</details>
+			</div>
+
+			<div class="questionAnswer__right">
+				<img src="/test-redisign/assets/bg-Bg76xKvt.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="buy">
+	<div class="container">
+		<div class="buy__content">
+			<div class="buy__content-left">
+				<h4 class="buy__title">
+					<span>Лидогенерация —</span> <br />
+					это новая <br />
+					эра маркетинга!
+				</h4>
+				<img class="buy__img" src="/test-redisign/assets/Rocket-CCPUh2zQ.png" alt="" />
+
+				<a href="#!" class="buy__btn">купить лиды</a>
+			</div>
+			<div class="buy__content-right">
+				<ul class="buy__list">
+					<li class="buy__item">Использование лидогенерации снижает стоимость привлечения клиентов, позволяет бизнесу сосредоточиться на основном продукте и значительно упрощает процесс работы.</li>
+					<li class="buy__item">Стоимость заявок на нашей платформе зависит от их качества и сложности. Мы предоставляем прозрачные тарифы и выгодные условия сотрудничества.</li>
+					<li class="buy__item">Наша биржа — это место встречи тех, кто заказывает заявки, и тех, кто их предоставляет. Мы создаём условия для успешного сотрудничества и взаимной выгоды.</li>
+				</ul>
+
+				<button class="buy__btn-more">Читать больше</button>
+			</div>
+		</div>
+		<section class="buyModal">
+	<div class="buyModal__wrapper">
+		<ul class="buyModal__list">
+			<li class="buyModal__item">
+				<p class="buyModal__text">Биржа лидов — это современное решение для бизнеса, которое позволяет эффективно находить новых клиентов и масштабировать свою деятельность.</p>
+			</li>
+			<li class="buyModal__item">
+				<p class="buyModal__text">Использование биржи помогает оптимизировать стоимость привлечения заявок и получить готовые решения для лидогенерации. Наш сервис предоставляет уникальную возможность купить или продать лиды, обеспечивая прозрачность и надёжность каждой сделки.</p>
+			</li>
+			<li class="buyModal__item">
+				<p class="buyModal__text">Мы объединяем вебмастеров, готовых передать заявки, и бизнесы, которым нужны новые клиенты. На нашей платформе вебмастеры размещают готовые заявки, которые затем приобретаются бизнесами для привлечения новых клиентов. Это упрощает процесс взаимодействия и повышает эффективность работы. Каждая заявка проходит тщательную проверку, чтобы обеспечить максимальную ценность для бизнеса.</p>
+			</li>
+			<li class="buyModal__item">
+				<p class="buyModal__text">Вы покупаете лиды, уже готовые к взаимодействию, и получаете гарантированный результат.</p>
+			</li>
+			<button class="buyModal__close">Скрыть</button>
+		</ul>
+	</div>
+</section>
+
+	</div>
+</section>
+
+	<section class="contacts">
+	<div class="container">
+		<div class="contacts__content">
+			<div class="contacts__left-block">
+				<h4 class="contacts__title">Контакты</h4>
+				<p class="contacts__text">Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь с нами, и мы предоставим необходимую информацию!</p>
+				<div class="contacts__info">
+					<div class="contacts__address">
+						<p class="contacts__address-title">Адрес офиса</p>
+						<p class="contacts__address-text">г. Москва, ул. Дубининская, д. 53</p>
+					</div>
+					<div class="contacts__phone">
+						<p class="contacts__phone-title">Телефон</p>
+						<a href="tel:+74951183282" class="contacts__phone-text">+7 495 118-32-82</a>
+					</div>
+					<div class="contacts__email">
+						<p class="contacts__email-title">Email</p>
+						<a class="contacts__email-text" href="mailto:mailbox@leadconveer.ru">mailbox@leadconveer.ru</a>
+					</div>
+					<div class="contacts__social">
+						<p class="contacts__social-title">Или напишите нам в любимом мессенджере:</p>
+						<div class="contacts__social-block">
+							<a href="https://t.me/leadconveer" target="_blank">
+								<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_753_306)">
+										<path d="M54.4 0H9.6C4.29807 0 0 4.29807 0 9.6V54.4C0 59.7019 4.29807 64 9.6 64H54.4C59.7019 64 64 59.7019 64 54.4V9.6C64 4.29807 59.7019 0 54.4 0Z" fill="#37AEE2" />
+										<path d="M24.875 50.5C23.5 50.5 23.625 50 23.25 48.75L19.25 35.625L49.875 17.625" fill="#C8DAEA" />
+										<path d="M24.875 50.5C25.75 50.5 26.25 50 26.875 49.5L32.5 44.125L25.5 39.875" fill="#A9C9DD" />
+										<path d="M25.5001 39.8746L42.3751 52.2496C44.1251 53.3746 45.6251 52.7496 46.1251 50.4996L53.0001 18.2496C53.6251 15.4996 51.8751 14.2496 50.0001 15.1246L9.87506 30.6246C7.25006 31.6246 7.25006 33.2496 9.37506 33.8746L19.7501 37.1246L43.5001 21.9996C44.6251 21.3746 45.6251 21.6246 44.8751 22.4996" fill="#F6FBFE" />
+									</g>
+									<defs>
+										<clipPath id="clip0_753_306">
+											<rect width="64" height="64" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contacts__right-block">
+				<img src="/test-redisign/assets/happylove-top-D9XQ1Ud6.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__content">
+			<p class="footer__rightsText">© 2025 Все права защищены. Технология «Лид Конвейер» - лидогенерация для бизнеса.</p>
+			<p class="footer__info">ООО «ДС-ГРУПП» ИНН 7801355174 ОГРН 1187847129425</p>
+			<div class="footer__footerMenu">
+				<a href="#" class="footer__footerMenu-link">Блог</a>
+				<span></span>
+				<a href="#" class="footer__footerMenu-link">Договор-оферта</a>
+				<span></span>
+				<a href="#" class="footer__footerMenu-link">Политика конфиденциальности</a>
+				<span></span>
+				<a href="#" class="footer__footerMenu-link">Соглашение об обработке данных</a>
+				<span></span>
+				<a href="#" class="footer__footerMenu-link">Вход в личный кабинет</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+		</div>
+	</body>
+</html>

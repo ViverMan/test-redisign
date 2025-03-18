@@ -1,0 +1,83 @@
+@use "../../../scss/base/mixins.scss";
+.clients {
+	background-color: var(--page-bg);
+	padding-bottom: var(--block-padding-bottom);
+
+	@include mixins.tablet {
+		padding-bottom: var(--block-padding-bottom-60);
+	}
+
+	@include mixins.mobileSm {
+		padding-bottom: var(--block-padding-bottom-30);
+	}
+}
+.clients__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.clients__title {
+	font-family: var(--font-accent);
+	font-size: var(--fs-48);
+	font-weight: var(--fw-700);
+	line-height: 1;
+	color: var(--text-color-black);
+	text-align: center;
+	margin-bottom: 20px;
+	max-width: 800px;
+	span {
+		color: var(--text-accent);
+	}
+}
+.clients__text {
+	font-family: var(--font-text);
+	font-size: var(--fs-32);
+	font-weight: var(--fw-400);
+	color: var(--text-color);
+	text-align: center;
+	margin-bottom: 40px;
+	max-width: 800px;
+}
+.clients__cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+	gap: 20px;
+
+	@include mixins.tablet {
+		height: 120px;
+	}
+
+	@include mixins.mobile {
+		height: 100%;
+		gap: 12px;
+
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	@include mixins.mobileSm {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.clients__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--gray-bg);
+	border-radius: 30px;
+	padding: 0px 12px;
+	height: 100%;
+
+	@include mixins.mobile {
+		border-radius: 20px;
+	}
+
+	img {
+		padding: 12px;
+	}
+}

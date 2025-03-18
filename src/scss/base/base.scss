@@ -1,0 +1,33 @@
+html {
+	scroll-behavior: smooth;
+	background-color: var(--page-bg);
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-accent);
+	text-wrap: balance;
+	// overflow: hidden;
+}
+
+#app {
+	height: 100vh;
+	background-color: var(--page-bg);
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+.dispNone {
+	display: none;
+}
+
+.dispBlock {
+	display: block;
+}

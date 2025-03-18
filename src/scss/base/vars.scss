@@ -1,0 +1,42 @@
+:root {
+	--container-width: 1780px;
+	--container-padding: 15px;
+
+	--block-padding-top: 120px;
+	--block-padding-bottom: 120px;
+	--block-padding-top-60: 60px;
+	--block-padding-bottom-60: 60px;
+	--block-padding-top-30: 30px;
+	--block-padding-bottom-30: 30px;
+
+	--font-accent: "Montserrat", sans-serif;
+	--font-text: "Inter-Regular", sans-serif;
+	--font-text-accent: "Inter-Bold", sans-serif;
+	--font-text-medium: "Inter-Medium", sans-serif;
+
+	--page-bg: #fff;
+	--black-bg: #2d2d2d;
+	--gray-bg: #f6f6f6;
+	--text-color: #808080;
+	--text-color-white: #fff;
+	--text-color-black: #2d2d2d;
+	--text-color-gray: #c0c0c0;
+	--text-accent: #f60;
+
+	--fs-20: clamp(14px, 2vw, 20px);
+	--fs-24: clamp(14px, 1.8vw, 24px);
+	--fs-32: clamp(16px, 1.6vw, 32px);
+	--fs-36: clamp(18px, 2vw, 36px);
+	--fs-48: clamp(14px, 2vw, 48px);
+	--fs-80: clamp(30px, 5vw, 80px);
+
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-700: 700;
+
+	--br-20: 20px;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}

@@ -1,0 +1,135 @@
+@use "../../../scss/base/mixins.scss";
+.advantages {
+	padding-top: var(--block-padding-top);
+	background-color: #fff;
+
+	@include mixins.tablet {
+		padding-top: var(--block-padding-top-60);
+	}
+
+	@include mixins.mobileSm {
+		padding-top: var(--block-padding-top-30);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__title {
+		font-size: var(--fs-48);
+		font-weight: var(--fw-700);
+		font-family: var(--font-accent);
+		line-height: 1;
+		color: var(--text-color-black);
+		text-align: center;
+		span {
+			color: var(--text-accent);
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		@include mixins.mobileSm {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+			gap: 12px;
+			width: 100%;
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 100%;
+		background-color: var(--gray-bg);
+		border-radius: 30px;
+
+		&-title {
+			position: relative;
+			font-size: var(--fs-32);
+			font-weight: var(--fw-400);
+			font-family: var(--font-text);
+			line-height: 1;
+			color: var(--text-color-black);
+
+			&::after {
+				position: absolute;
+				top: -5px;
+				right: -10px;
+				content: "";
+				display: block;
+				width: 44px;
+				height: 44px;
+				background-image: url("./img/advantages/Star.svg");
+				background-size: contain;
+				background-repeat: no-repeat;
+
+				@include mixins.tablet {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+
+		&-text {
+			font-size: var(--fs-24);
+			font-weight: var(--fw-400);
+			font-family: var(--font-text);
+			line-height: 1;
+			color: var(--text-color);
+		}
+
+		&-desc {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			width: 50%;
+			max-width: 466px;
+			margin-right: 20px;
+			padding: 60px 0 40px 40px;
+
+			@include mixins.tablet {
+				width: 100%;
+				max-width: 100%;
+				margin-right: 0;
+				padding: 30px;
+				justify-content: center;
+			}
+
+			@include mixins.mobileSm {
+				padding: 20px;
+			}
+		}
+
+		&-img {
+			width: 50%;
+			max-width: 365px;
+			height: 100%;
+			margin-top: auto;
+			margin-left: auto;
+
+			@include mixins.tablet {
+				display: none;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+
+				border-radius: 0px 0px 30px 0px;
+			}
+		}
+	}
+}

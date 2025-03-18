@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: local("Montserrat-Bold"), url("./Montserrat/Montserrat-Bold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter-Regular";
+	src: local("Inter-Regular"), url("./Inter/Inter_18pt-Regular.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter-Bold";
+	src: local("Inter-Bold"), url("./Inter/Inter_18pt-Bold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Inter-Medium";
+	src: local("Inter-Medium"), url("./Inter/Inter_18pt-Medium.ttf") format("ttf");
+	font-weight: 500;
+	font-style: normal;
+}
